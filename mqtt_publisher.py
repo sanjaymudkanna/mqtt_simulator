@@ -26,8 +26,8 @@ def publish_temp(mqtt_client):
             mqtt_client.publish(MQTT_TOPIC, payload)
             print(f"Published: {payload}")
         else:
-            print("Failed to read temperature")
-        time.sleep(5)
+            print("Failed to read the temperature")
+        time.sleep(10)
 
 if __name__ == "__main__":
     mqtt_client = mqtt.Client()
